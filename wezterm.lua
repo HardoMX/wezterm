@@ -15,4 +15,10 @@ config.window_padding = {
     bottom = 0,
 }
 
+local act = wezterm.action
+
+config.keys = {
+    { key = 'v', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
+}
+
 return config
